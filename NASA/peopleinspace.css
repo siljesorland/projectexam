@@ -1,0 +1,117 @@
+body {
+    background-image: url(peopleinspace.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(Montserrat/Montserrat-Medium.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.topnav li a.active {
+    background-color: #243072;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li {
+        float: none;
+    }
+}
+
+.results {
+    margin: 2rem;
+    padding: 2rem;
+    max-width: 600px;
+    border: 1px solid #c21818;
+    text-align: center;
+    border-radius: 2rem;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.number {
+    margin: 1rem;
+    padding: 2rem;
+    max-width: 400px;
+    border: 1px solid #c21881;
+    background: white;
+    text-align: center;
+    border-radius: 2rem;
+    margin: auto;
+}
+
+.card {
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: white;
+    border: 1px solid #c21818;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid darkred;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

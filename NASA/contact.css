@@ -1,0 +1,121 @@
+body {
+    background-image: url(nightsky.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(Montserrat/Montserrat-ExtraLight.ttf);
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.topnav li a.active {
+    background-color: #243072;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li {
+        float: none;
+    }
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.formcontainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.people {
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+
+#contactForm {
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfd;
+    padding: 70px;
+    margin-top: 30px;
+    margin-bottom: 280px;
+    border: 1px solid #c21818;
+    border-radius: 25px;
+}
+
+button {
+    background: #c21818;
+    border: none;
+    width: 200px;
+    padding: 1rem;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+.form-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 1px;
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: darksalmon;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
